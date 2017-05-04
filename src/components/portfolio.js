@@ -8,27 +8,14 @@ var i = 0;
 
 class Portfolio extends Component {
     
-    filterArray(array, filter) {
-        console.log(array);
-        const finalArray=[]; 
-        array.forEach(function(arr) {for(i=0; i<arr.technologies.length; i++)
-        {if (arr.technologies[i] === filter ){
-        finalArray.push(arr)}} 
-        }
-        );
-
-        return finalArray
-    }
-    
   
     
     handleClick(filter){
 
         console.log(filter);
     
-     var filterValue = this.filterArray(this.props.project, filter);
-      console.log(filterValue);
-      this.props.filteredProjects(filterValue);
+ 
+      this.props.filteredProjects(filter);
       
      
     }
@@ -50,7 +37,8 @@ class Portfolio extends Component {
     render() {
     return (
         <div>
-        <button value="bootstrap" onClick={(e)=>{this.handleClick(e.target.value)}}>jQuery</button> 
+        <button value="bootstrap" onClick={(e)=>{this.handleClick(e.target.value)}}>Boostrap</button> 
+        <button value="jQuery" onClick={(e)=>{this.handleClick(e.target.value)}}>jQuery</button> 
        
         Projects will go here!
       {this.renderProjects()}
@@ -70,7 +58,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     //Whenever selectBook is called the results need to be passed to all reducers
-    return bindActionCreators({selectFilter:selectFilter, filteredProjects: filteredProjects}, dispatch);
+    return bindActionCreators({filteredProjects: filteredProjects}, dispatch);
 }
 
 

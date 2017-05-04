@@ -1,10 +1,6 @@
+var i = 0;
 
-export default function(state={}, action) {
-    console.log(action.type)
-    switch(action.type){
-           
-        case 'FILTERED_ARRAY': return action.payload;
-           default: return [
+const originalData =  [
         {
             name: "HL Architecture and Construction",
             website: 101,
@@ -28,6 +24,26 @@ export default function(state={}, action) {
             pages: 1
         }
         ];
+        
+     function filterArray(filter) {
+        const finalArray=[]; 
+        originalData.forEach(function(arr) {for(i=0; i<arr.technologies.length; i++)
+        {if (arr.technologies[i] === filter ){
+        finalArray.push(arr)}} 
+        }
+        );
+
+        return finalArray
+    }
+
+export default function(state={}, action) {
+    console.log(action.type);
+    switch(action.type){
+        case 'FILTERED_ARRAY': console.log(action.payload); 
+         var testing = filterArray(action.payload);
+        
+        return testing;
+           default: return originalData;
     }
 
 }
