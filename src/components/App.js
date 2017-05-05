@@ -58,7 +58,7 @@ class App extends Component {
         </div>
     </header>
 <section className="portfolio">
-<h2>Portfolio </h2>
+
 <Portfolio />
 </section>
       </div>

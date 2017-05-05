@@ -4,10 +4,12 @@ import ActivePortfolioReducer from './reducer-active-projects';
 
 
 
+
 const rootReducer = combineReducers({
   
 project : PortfolioReducer,
 filter : ActivePortfolioReducer
+ 
 
 });
 
