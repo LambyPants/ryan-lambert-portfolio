@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import PortfolioReducer from './reducer-projects.js';
 import ActivePortfolioReducer from './reducer-active-projects';
+import TechReducer from './reducer-tech-skills';
 
 
 
@@ -8,8 +9,8 @@ import ActivePortfolioReducer from './reducer-active-projects';
 const rootReducer = combineReducers({
   
 project : PortfolioReducer,
-filter : ActivePortfolioReducer
- 
+filter : ActivePortfolioReducer,
+ tech: TechReducer
 
 });
 

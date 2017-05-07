@@ -4,14 +4,15 @@ header {
   color: white;
 }
 header .intro-text .name {
+  padding-top: 10%;
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 4em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
+  font-size: 3em;
   font-weight: 300;
 }
 
@@ -67,9 +68,11 @@ header .intro-text .skills {
   color: white;
   border-color: #18BC9C;
 }
-
+#maincontent {
+  height: 75vh;
+}
 .portfolio {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 section {
@@ -122,6 +125,11 @@ section h2 {
   margin: 0;
 }
 
+.container .well {
+  background-color: rgba(0,0,0,0);
+  margin-bottom:0;
+}
+
 section.success {
   background: #18BC9C;
   color: white;
@@ -134,3 +142,40 @@ p {
   border-radius: 60%;
   padding-right: 20px;
 }
+
+section #tech {
+  background: orange;
+  color: white;
+}
+ .tech-photos.thumbnail {
+border: none;
+background-color: rgba(0,0,0,0);
+}
+.tech-photos img {
+  max-height: 110px;
+}
+.contact-me img {
+  border-radius: 50%;
+}
+.contact-me td {
+  padding:20px 0;
+  font-size: 2.0em;
+}
+
+.contact-me table {
+  margin-top: 5%;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+footer .upper-footer{
+  padding: 20px 0;
+  background-color:red;
+}
+footer .footer-below {
+  padding: 25px 0 40px 0;
+  background-color: #233140;
+}
+

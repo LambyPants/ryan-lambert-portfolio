@@ -10,7 +10,7 @@ class Buttons extends Component {
        return  this.props.filter.map((button, i)=>{
             return(
             
-            <button  className="btn btn-success" key={i} value={button}  onClick={(e)=>{this.props.filteredProjects(e.target.value)}}>{button}</button> 
+            <button  className="btn btn-primary" key={i} value={button}  onClick={(e)=>{this.props.filteredProjects(e.target.value)}}>{button}</button> 
            
             
             );
@@ -20,8 +20,11 @@ class Buttons extends Component {
     render()  {
     
     return (
-        <div>
+        <div className="container">
+        <div className="well well-lg">
+        <h4>Filter By Project Type</h4>
        {this.renderButtons()}
+        </div>
         </div>
         )
     

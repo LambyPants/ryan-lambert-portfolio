@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import 'react-bootstrap';
 import Portfolio from './portfolio';
+import AboutMe from './portfolio-aboutme';
+import Tech from './portfolio-tech';
+import Contact from './portfolio-contact';
 
 
 class App extends Component {
@@ -26,6 +29,7 @@ class App extends Component {
       <ul className="nav navbar-nav navbar-right">
         <li><a href="#">About <span className="sr-only">(current)</span></a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">Skills</a> </li>
 
       </ul>
 
@@ -60,7 +64,40 @@ class App extends Component {
 <section className="portfolio">
 
 <Portfolio />
+    <section className="success" id="about">
+            <AboutMe />
+    </section>
+        <section className="technologies" id="tech">
+        <Tech />
+    </section>
+        <section className="contact-me">
+       
+<Contact/>
+    
+    </section>
 </section>
+<footer>
+<div className="upper-footer">
+<div className="container">
+<div className="row">
+<div className="col-lg-12">
+Project Idea? Always Feel Free to Reach Out!
+</div>
+</div>
+</div>
+
+
+</div>
+        <div className="footer-below">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        I made this site using React.js and Redux - feel free to check out my code on GitHub!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
       </div>
     );
   }
