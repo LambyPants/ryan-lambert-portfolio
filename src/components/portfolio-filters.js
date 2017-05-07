@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import {filteredProjects} from '../actions/index';
 
 
+
 class Buttons extends Component {
     renderButtons(){
         console.log(this.props.filter);

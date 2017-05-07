@@ -1,0 +1,62 @@
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import {store} from '../index';
+import { Provider } from 'react-redux';
+import {connect} from 'react-redux';
+import classNames from 'classnames';
+
+
+class Modal extends Component {
+    componentDidMount() {
+        this.modalTarget = document.createElement('div');       
+        this.modalTarget.className = "hide targetModal";
+        document.body.appendChild(this.modalTarget);
+        this._render();
+    }
+    componentDidUpdate() {
+        var x  = document.querySelector('.targetModal');
+        var y = document.querySelector('.hide');
+       if(y) {
+           x.classList.remove('hide')};
+           if(!y){
+               x.className += " hide";
+           }
+        console.log(this.props.openClose);
+        this._render();
+    }
+    componentWillUnmount(){
+        ReactDOM.unmountComponentAtNode(this.modalTarget);
+        document.body.removeChild(this.modalTarget);
+    }
+    _render(){
+        ReactDOM.render(
+            <Provider store={store}>
+            <div className={classNames({'custom-modal': this.props.openClose})}>
+            <h2>
+            Project Info
+            </h2>
+      
+            {
+                this.props.children
+            }
+            
+            </div>
+            </Provider>,
+            this.modalTarget
+            );
+    }
+    render() {
+        return (
+                <noscript />
+            );
+    }
+}
+
+function mapStateToProps(state){
+    console.log(state.openClose);
+    return {
+        openClose: state.openClose
+    };  
+}
+
+export default connect(mapStateToProps)(Modal);
