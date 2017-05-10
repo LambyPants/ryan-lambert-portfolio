@@ -14,12 +14,12 @@ class Modal extends Component {
         this._render();
     }
     componentDidUpdate() {
-        var x  = document.querySelector('.targetModal');
-        var y = document.querySelector('.hide');
-       if(y) {
-           x.classList.remove('hide')};
-           if(!y){
-               x.className += " hide";
+        var targetModal  = document.querySelector('.targetModal');
+        var hideClass = document.querySelector('.hide');
+       if(hideClass && this.props.openClose) {
+           targetModal.classList.remove('hide')}
+           if(!hideClass ){
+               targetModal.className += " hide";
            }
         console.log(this.props.openClose);
         this._render();
@@ -32,9 +32,6 @@ class Modal extends Component {
         ReactDOM.render(
             <Provider store={store}>
             <div className={classNames({'custom-modal': this.props.openClose})}>
-            <h2>
-            Project Info
-            </h2>
       
             {
                 this.props.children

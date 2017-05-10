@@ -46,7 +46,9 @@ class App extends Component {
                     <div className="intro-text">
                         <h1 className="name">Hi. I'm Ryan.</h1>
                         <hr/>
-                        <span className="skills">I build full-stack javascript applications.</span>
+                        <h3 className="skills">I build full-stack javascript applications.</h3>
+                        <h5> Explore my work and always feel free to reach out! </h5>
+                        
                     </div>
                 </div>
                 <div className="row">
@@ -65,6 +67,7 @@ class App extends Component {
 <section className="portfolio">
 
 <Portfolio />
+</section>
     <section className="success" id="about">
             <AboutMe />
     </section>
@@ -76,7 +79,7 @@ class App extends Component {
 <Contact/>
     
     </section>
-</section>
+
 <footer>
 <div className="upper-footer">
 <div className="container">

@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #312cb3;
   color: white;
 }
 header .intro-text .name {
@@ -17,7 +17,7 @@ header .intro-text .skills {
 }
 
 .navbar-custom {
-  background: #2C3E50;
+  background: #161f3c;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -69,10 +69,15 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 #maincontent {
-  height: 75vh;
+  height: 78vh;
 }
+
 .portfolio {
+  border-top: white 6px solid;
+  background: white;
+  color: #161f3c;
   padding: 50px 0;
+  border-bottom: white 6px solid;
 }
 
 section {
@@ -81,7 +86,12 @@ section {
 }
 section h2 {
   margin: 0;
+  color: white;
   font-size: 3em;
+}
+
+.portfolio h2 {
+  color: #161f3c;
 }
 
 #portfolio .portfolio-item {
@@ -95,7 +105,7 @@ section h2 {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(49,44,179,.9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -125,13 +135,24 @@ section h2 {
   margin: 0;
 }
 
+.portfolio-link img {
+  max-height: 185px;
+  width: 500px;
+  padding: 0
+}
+.well .btn {
+  background: #312cb3;
+  border: 1px solid #161f3c;
+}
 .container .well {
-  background-color: rgba(0,0,0,0);
+  border: 2px solid #ddd;
+  background-color: ghostwhite;
   margin-bottom:0;
 }
 
-section.success {
+.success {
   background: #18BC9C;
+  padding: 200px 0;
   color: white;
 }
 p {
@@ -143,8 +164,10 @@ p {
   padding-right: 20px;
 }
 
-section #tech {
-  background: orange;
+
+ #tech {
+  background: #efb141;
+  padding: 160px 0;
   color: white;
 }
  .tech-photos.thumbnail {
@@ -154,6 +177,7 @@ background-color: rgba(0,0,0,0);
 .tech-photos img {
   max-height: 110px;
 }
+
 .contact-me img {
   border-radius: 50%;
 }
@@ -172,28 +196,75 @@ footer {
 }
 footer .upper-footer{
   padding: 20px 0;
-  background-color:red;
+  background-color:tomato;
 }
 footer .footer-below {
   padding: 25px 0 40px 0;
-  background-color: #233140;
+  background-color: #161f3c;
 }
 
 .custom-modal {
   position: fixed;
-  top: 40px;
-  left:40px;
-  right:40px;
-  bottom:40px;
-  border: 1px solid #ccc;
-  background: #fff;
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  border: 1px solid #ddd;
+  background: rgba(100,100,100,.5);
   overflow: auto;
   border-radius: 4px;
   outline: none;
   padding: 20px;
 display:block;
+
 }
 
 .hide {
   display: none;
+}
+
+.custom-modal h2 {
+  color: #161f3c;
+  text-align: center;
+}
+.custom-modal h4 {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.5em;
+}
+.custom-modal table {
+  text-align: center;
+  background: #312cb3;
+  color: white;
+}
+.custom-modal tr {
+  border: 2px solid #161f3c;
+}
+.custom-modal td {
+  border: 2px solid #161f3c;
+}
+.custom-modal h5 {
+  margin-right: 5%;
+}
+.btn.github {
+  background: #efb141;
+  border: 1px solid #161f3c;
+}
+.btn.website {
+  background: teal;
+  border: 1px solid #161f3c;
+}
+
+.project-info {
+  border-radius: 20px;
+  background-color: white;
+  max-width: 55%;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid #161f3c;
+  color: #161f3c;
+}
+.project-info .panel-body {
+  background-color: ghostwhite;
+  border: 1px solid #161f3c;
 }

@@ -23,6 +23,7 @@ class Portfolio extends Component {
       
      
     }
+    
  
     renderProjects(){
    
@@ -31,22 +32,29 @@ class Portfolio extends Component {
         return arrayToMap.map((project,i)=>{
             console.log(project);
             return(
-                <div className="col-sm-4 portfolio-item" key={i}>{project.name} 
+                <div className="col-sm-4 portfolio-item" key={i}>
                        <a onClick={()=>{this.props.selectedModal(project); this.props.openCloseModal(true);}}href="#portfolioModal1" className="portfolio-link">
                 <div className="caption">
                             <div className="caption-content">
-                            {project.name}
+                            <h4> {project.name} </h4>
                             </div>
             
                 </div>
           
-                    <img src={project.imageLink} className="img-responsive" alt="HLA"/>
+                    <img src={project.imageLink} className="img-responsive img-thumbnail" alt="HLA"/>
                           </a>
                 </div>
                 );
         });
     }
-    
+    renderModals(){
+        var arrayToMap = this.props.modal.technologies;
+        return arrayToMap.map((tech,i)=>{
+            return(
+                <td key={i}>{tech}</td>
+                );
+        });
+    }
   
 
     render() {
@@ -73,8 +81,35 @@ class Portfolio extends Component {
          
 <Modal>
 
-<button onClick={()=>{this.props.openCloseModal(false)}}>close modal </button>
+
+<div className="project-info">
+<button className="btn btn-danger pull-right" onClick={()=>{this.props.openCloseModal(false)}}>close</button>
 <h2>{this.props.modal.name}</h2>
+<img className="img-responsive img-thumbnail" alt="projectlink" src={this.props.modal.imageLink}/>
+    <div className="caption-full">
+    <div>
+    <h5 className="pull-right"><em>Project Completed: {this.props.modal.completion}</em> </h5>
+    </div>
+    <div className="panel panel-default">
+  <div className="panel-body">
+        <h4> {this.props.modal.description} </h4>
+  </div>
+</div>
+
+  
+    <table className="table table-bordered">
+    <tbody>
+        <tr>
+        {this.renderModals()}
+        </tr>
+        </tbody>
+    </table>
+
+
+<a className="btn btn-primary github" href={this.props.modal.github}>See the Code</a>
+<a className="btn btn-primary website" href={this.props.modal.website}>See the Website</a>
+</div>
+</div>
 </Modal>
 
 

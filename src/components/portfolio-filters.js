@@ -10,10 +10,10 @@ class Buttons extends Component {
         console.log(this.props.filter);
        return  this.props.filter.map((button, i)=>{
             return(
-            
-            <button  className="btn btn-primary" key={i} value={button}  onClick={(e)=>{this.props.filteredProjects(e.target.value)}}>{button}</button> 
+         
+            <button  className="btn btn-primary btn-lg" key={i} value={button}  onClick={(e)=>{this.props.filteredProjects(e.target.value)}}>{button}</button> 
            
-            
+           
             );
             
         });
@@ -24,7 +24,9 @@ class Buttons extends Component {
         <div className="container">
         <div className="well well-lg">
         <h4>Filter By Project Type</h4>
+        <div className="btn-group">
        {this.renderButtons()}
+       </div>
         </div>
         </div>
         )
