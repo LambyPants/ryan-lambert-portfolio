@@ -27,7 +27,7 @@ const originalData =  [
             technologies: ["MongoDB", "Bootstrap", "React.js", "Node.js"],
             description: "Single page application which incorporates an external MongoDB database and server-side API to save, delete, and edit user-uploaded recipes.",
             completion: "April 2017",
-            imageLink: "http://hallambertarchitecture.com/HLAFinal/CustomHomes/HalsHouse/1-Thumbnail.JPG"
+            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494382780/Screen_Shot_2017-05-09_at_9.19.24_PM_rcyrrf.png"
         },       
         {
             name: "React YouTube Clone",

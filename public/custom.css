@@ -1,3 +1,7 @@
+body {
+  font-family: 'Exo', sans-serif;
+}
+
 header {
   text-align: center;
   background: #312cb3;
@@ -6,7 +10,6 @@ header {
 header .intro-text .name {
   padding-top: 20%;
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 4em;
@@ -18,7 +21,6 @@ header .intro-text .skills {
 
 .navbar-custom {
   background: #161f3c;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -285,7 +287,7 @@ display:block;
 .project-info {
   border-radius: 20px;
   background-color: white;
-  max-width: 55%;
+  max-width: 50%;
   padding: 20px 30px 30px 30px;
   margin: 0 auto;
   border: 1px solid #161f3c;
