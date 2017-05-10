@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {bindActionCreators} from 'redux';
 import Buttons from './portfolio-filters';
 import Modal from './modal';
@@ -35,7 +35,11 @@ class Portfolio extends Component {
                 <div className="col-sm-4 portfolio-item" key={i}>
                        <a onClick={()=>{this.props.selectedModal(project); this.props.openCloseModal(true);}}href="#portfolioModal1" className="portfolio-link">
                 <div className="caption">
+          
                             <div className="caption-content">
+                                   <span><i className="fa fa-external-link" aria-hidden="true"></i>
+ </span>    
+                                 
                             <h4> {project.name} </h4>
                             </div>
             
@@ -58,6 +62,13 @@ class Portfolio extends Component {
   
 
     render() {
+        
+            const transitionOptions = {
+                transitionName: "fade",
+                transitionEnterTimeout: 500,
+                transitionLeaveTimeout: 500
+            };
+        
     return (
         <div>
         <div className="row">
@@ -74,7 +85,9 @@ class Portfolio extends Component {
         <div className="container">
   
                 <div className="row">
+                <ReactCSSTransitionGroup {...transitionOptions}>
       {this.renderProjects()}
+      </ReactCSSTransitionGroup>
                 </div>
             </div>
          </section>
@@ -83,7 +96,7 @@ class Portfolio extends Component {
 
 
 <div className="project-info">
-<button className="btn btn-danger pull-right" onClick={()=>{this.props.openCloseModal(false)}}>close</button>
+<button className="btn btn-danger pull-right" onClick={()=>{this.props.openCloseModal(false)}}><i className="fa fa-times" aria-hidden="true"></i></button>
 <h2>{this.props.modal.name}</h2>
 <img className="img-responsive img-thumbnail" alt="projectlink" src={this.props.modal.imageLink}/>
     <div className="caption-full">

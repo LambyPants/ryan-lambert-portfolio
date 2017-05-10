@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div>
 
-<nav className="navbar navbar-default navbar-custom">
+<nav className="navbar navbar-default navbar-fixed-top navbar-custom">
       <div className="container">
   <div className="container-fluid">
 
@@ -54,9 +54,9 @@ class App extends Component {
                 <div className="row">
                 <div className="col-lg-12">
                 <div className="header-links">
-                <span>Github </span>
-                <span>LinkedIn </span>
-                <span>Email </span>
+                <a><i className="fa fa-github" aria-hidden="true"></i></a>
+                <a><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a><i className="fa fa-envelope" aria-hidden="true"></i></a>
                 
                 </div>
                 </div>
