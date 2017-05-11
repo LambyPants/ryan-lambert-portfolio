@@ -1,4 +1,12 @@
 var i = 0;
+import HLA from '../../public/images/HLA.png';
+import Yelp from '../../public/images/Yelp.png';
+import lovetoeat from '../../public/images/lovetoeat.png';
+import YelpCamp from '../../public/images/yelpcamp.png';
+import easyabc from '../../public/images/easyabc.png';
+import Weather from '../../public/images/Weather.png';
+import Image8 from '../../public/images/HTML5.png';
+import Image9 from '../../public/images/HTML5.png';
 
 const originalData =  [
         {
@@ -8,7 +16,7 @@ const originalData =  [
             technologies: ["jQuery", "Bootstrap"],
             description: "Full Architecture Professional Website designed using Bootstrap and jQuery; includes a PHP contact form and multiple lightbox galleries.",
             completion: "March 2017",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494202742/Screen_Shot_2017-05-07_at_7.18.45_PM_tgku2w.png"
+            imageLink: HLA
         },        
         {
             name: "React / Redux Weather App",
@@ -18,7 +26,7 @@ const originalData =  [
             type: "Single Page Application",
             description: "Single page application which dynamically displays Sparkline charts of city temperatures, a 10 day forecast, and their location on Google Maps.",
             completion: "May 2017",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494202596/Screen_Shot_2017-05-07_at_7.01.41_PM_ly0t67.png"
+            imageLink: Weather
         },
         {
             name: "MERN Stack Recipe App",
@@ -27,7 +35,7 @@ const originalData =  [
             technologies: ["MongoDB", "Bootstrap", "React.js", "Node.js"],
             description: "Single page application which incorporates an external MongoDB database and server-side API to save, delete, and edit user-uploaded recipes.",
             completion: "April 2017",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494382780/Screen_Shot_2017-05-09_at_9.19.24_PM_rcyrrf.png"
+            imageLink: lovetoeat
         },       
         {
             name: "React YouTube Clone",
@@ -45,7 +53,7 @@ const originalData =  [
             technologies: ["Node.js", "APIs", "Semantic-UI"],
             description: "This is a silly app made for a friend who LOVES reading bad reviews. This app randomly pulls a 1-star Review from Yelp via the Yelp-Fusion API; the structure of Yelp's API made this somewhat difficult to achieve, but thankfully you can now easily find the best of the worst of Yelp!",
             completion: "March 2017",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494202594/Screen_Shot_2017-05-07_at_7.13.41_PM_nkpcxk.png"
+            imageLink: Yelp
         },        
         {
             name: "React / Redux Blog App",
@@ -72,7 +80,7 @@ const originalData =  [
             technologies: ["Node.js", "Bootstrap", "MongoDB"],
             completion: "April 2017",
             description: "",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494202967/Screen_Shot_2017-05-07_at_7.22.18_PM_xbccyz.png"
+            imageLink: YelpCamp
         },        
         {
             name: "React ABCs Game / Learning Tool",
@@ -81,7 +89,7 @@ const originalData =  [
             technologies: ["React.js", "Games"],
             description: "This is an application to help children learn their ABC's and includes sound, images, and option-toggles (random letter, play sound / word again, mute). This was a 'homework assignment' and is my own solution to Abhay Talreja's 'React JS - Build Real World Applications' couse on Udemy.",
             completion: "February 2017",
-            imageLink: "http://res.cloudinary.com/dlksliyac/image/upload/v1494210076/Screen_Shot_2017-05-07_at_9.20.54_PM_yucoks.png"
+            imageLink: easyabc
         }
         ];
         

@@ -1,54 +1,68 @@
+import HTML from '../../public/images/HTML5.png';
+import CSS from '../../public/images/css.png';
+import Bootstrap from '../../public/images/bootstrap.png';
+import Git from '../../public/images/git.png';
+import Javascript from '../../public/images/javascript.png';
+import React from '../../public/images/react.png';
+import Redux from '../../public/images/redux.png';
+import jQuery from '../../public/images/jquery.png';
+import Ajax from '../../public/images/ajax.png';
+import Node from '../../public/images/node.png';
+import APIs from '../../public/images/apis.png';
+import MongoDB from '../../public/images/mongodb.png';
+
+
 export default function() {
     return [
     {
         name: "HTML5",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494085732/HTML5_SupportingElements_51_lbiwdd.png"
+        image: HTML
     },    
     {
         name: "CSS",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494085606/css3_kaf9qd.png"
+        image: CSS
     },   
     {
         name: "Bootstrap",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494092336/bootstrap-logo_zb2nrd.png"
+        image: Bootstrap
     },    
     {
         name: "Javascript",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494085601/javascript_z4w7tm.png"
+        image: Javascript
     },   
     {
         name: "React.js",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494085901/react_u6uaus.png"
+        image: React
     },      
     {
         name: "Redux",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494085903/redux_qnwbbc.png"
+        image: Redux
     },    
 
     {
       name: "jQuery",
-      image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494086256/jquery_adhlcy.png"
+      image: jQuery
     },
         {
         name: "Ajax",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494086601/ajax_nphpfu.png"
+        image: Ajax
     },
     {
         name: "Node.js",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494086227/node_js_cywhj4.png"
+        image: Node
     },    
     
     {
         name: "APIs",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494086500/rest_iwvj0n.png"
+        image: APIs
     },    
     {
         name: "MongoDB",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494168867/mongodb-logo_lthupc.png"
+        image: MongoDB
     },    
     {
         name: "Git",
-        image: "http://res.cloudinary.com/dlksliyac/image/upload/v1494086283/git_logo_odwl4h.png"
+        image: Git
     },
         ];
 }
