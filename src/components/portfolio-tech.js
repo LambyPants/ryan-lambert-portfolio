@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux'; 
+import { connect } from 'react-redux';
 
 
 class Tech extends Component {
@@ -23,6 +23,7 @@ class Tech extends Component {
     render(){
         return(
             <div>
+
             <div className="row">
                 <div className="col-lg-12 text-center">
                     <h2>All Skills</h2>

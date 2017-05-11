@@ -19,7 +19,7 @@ class Contact extends Component {
   
         <div className="panel panel-default">
         <div className="panel-body">
-            <ul contact-list>
+            <ul className="contact-list">
                 
                 <li>
                     <span><a><i className="fa fa-envelope" aria-hidden="true"></i></a> </span>
