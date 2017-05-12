@@ -12,10 +12,7 @@ class Contact extends Component {
             </div>
              <div className="container-fluid">
             <div className="row">
-                <div className="col-sm-3">
-                    <img alt="profile" src="http://buzzsharer.com/wp-content/uploads/2015/07/cute-lab-puppy-watching.jpg"className="img-responsive"/>
-                </div>
-            <div className="col-sm-9">
+            <div className="col-sm-12">
   
         <div className="panel panel-default">
         <div className="panel-body">
@@ -27,17 +24,17 @@ class Contact extends Component {
                     
                 </li>              
                 <li>
-                    <span><a><i className="fa fa-github-square" aria-hidden="true"></i></a></span>
-                    <span><a href="https://www.linkedin.com/in/ryan-lambert-58202596.com">LinkedIn</a></span>
+                    <span><a><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/ryan-lambert-58202596">LinkedIn</a></span>
                      
                 </li>              
                 <li>
-                    <span><a><i className="fa fa-linkedin-square" aria-hidden="true"></i></a> </span>
-                     <span><a href="https://github.com/LambyPants">Github</a></span>
+                    <span><a><i className="fa fa-github-square" aria-hidden="true"></i></a> </span>
+                     <span><a href="https://www.github.com/LambyPants">Github</a></span>
                 </li>                
                 <li>
                     <span><a><i className="fa fa-facebook-square" aria-hidden="true"></i></a> </span>
-                     <span><a href="facebook.com"> Facebook </a></span>
+                     <span><a href="https://www.facebook.com/RyanLLambert"> Facebook </a></span>
                 </li>     
            
       

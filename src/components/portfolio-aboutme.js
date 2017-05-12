@@ -12,18 +12,23 @@ class AboutMe extends Component {
                 </div>
             </div>
             <div className="row">
+                <div className="about-me">
                 <div className="col-lg-2">
-                           <img alt="portfolio" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8gewL2z69veXT8NHSnrJFcZvggeWnNsk-oRQ3KEKQo26uqkq5"/>
+
+                    <img className="img-responsive img-thumbnail" alt="portfolio" src={require("../../public/images/ryanpic.jpg")}/>
                 </div>   
                         <div className="container">
-                <div className="col-lg-5 col-lg-offset-1">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <div className="col-lg-5">
+                    <p>Originally from Florida, I now call myself a proud Chicagoan (though I will always have a soft spot for extra-pulp orange juice). 
+                    I love building websites and web-applications and helping others solve problems. When I'm not coding, I love playing guitar and practicing my German. </p>
                 </div>
                 <div className="col-lg-5">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>I met my wife doing improv in the city and we have an adorable puppy named Cooper. You'll find us out and about the city together - rain or shine (or snow). Whether it's 
+                    a project for you, a friend, or just an adorable picture of your puppy, always feel to drop us a line! 
+                    free to drop us a line.</p>
                 </div>
                 </div>
-    
+            </div>
             </div>
         </div>
             </div>

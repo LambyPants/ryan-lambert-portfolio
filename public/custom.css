@@ -7,7 +7,7 @@ header {
   background: #312cb3;
   color: white;
 }
-header .intro-text .name {
+header .intro-text .name h1{
   padding-top: 20%;
   display: block;
   text-transform: uppercase;
@@ -26,15 +26,13 @@ header .intro-text .skills {
   border: none;
   margin-bottom: 0;
 }
-.navbar-custom .navbar-brand {
+.navbar-custom a {
+  cursor: pointer;
   color: white;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: white;
-}
+
+
+
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
@@ -44,6 +42,15 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li a:hover {
   color: #18BC9C;
 }
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+
+  color: #18BC9C;
+}
+
+
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
@@ -71,7 +78,7 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 #maincontent {
-  height: 88vh;
+  height: 95vh;
 }
 .header-links a {
   padding: 10px;
@@ -173,10 +180,25 @@ section h2 {
 p {
   font-size:  20px;
 }
-
+.about-me {
+  margin-left: 10%;
+}
 #about img {
-  border-radius: 60%;
-  padding-right: 20px;
+border-radius: 15%;
+}
+.about-me p {
+  margin-top: 17%;
+}
+
+@media(max-width: 1200px){
+  #about img {
+    max-width: 30%;
+  }
+}
+@media(max-width: 1200px){
+  .about-me p {
+    margin-top: 0;
+  }
 }
 
 
@@ -190,10 +212,23 @@ border: none;
 background-color: rgba(0,0,0,0);
 }
 .contact-me .container-fluid {
-  margin: 0 30% 0 20%;
+  margin: 0 30% 0 30%;
 }
+@media (max-width: 868px){
+.contact-me .container-fluid{
+ margin: 0 10% 0 10%; 
+}
+}
+
 .contact-me a {
   color: #312cb3;
+   font-size: 20px; 
+    font-size: 2.0vw;
+}
+@media (max-width: 868px){
+.contact-me a{
+font-size: 20px;
+}
 }
 .contact-me h2 {
   color: #161f3c ;

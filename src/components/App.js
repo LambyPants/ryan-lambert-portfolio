@@ -4,15 +4,42 @@ import Portfolio from './portfolio';
 import AboutMe from './portfolio-aboutme';
 import Tech from './portfolio-tech';
 import Contact from './portfolio-contact';
+import TextEffect from './portfolio-texteffect';
 
-
+import {Link, Element, Events, scroll, scrollSpy} from 'react-scroll';
 
 class App extends Component {
+constructor (props){
+      super(props);
+      this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  componentDidMount() {
+
+    Events.scrollEvent.register('begin', function() {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function() {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
 
   render() {
     return (
       <div>
-
+        <Element name="header" className="element" >
+       
 <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
       <div className="container">
   <div className="container-fluid">
@@ -24,14 +51,18 @@ class App extends Component {
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <a className="navbar-brand" href="#">Ryan Lambert</a>
+
+    <Link className="navbar-brand" to="header" spy={true} smooth={true} duration={500}> Ryan Lambert</Link>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#">About <span className="sr-only">(current)</span></a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Skills</a> </li>
+        
+        <li><Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500}>Portfolio</Link></li>
+        <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Link></li>
+        <li><Link activeClass="active" to="skills" spy={true} smooth={true} duration={500}>Skills</Link></li>
+        <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Contact</Link></li>
+
 
       </ul>
 
@@ -39,13 +70,15 @@ class App extends Component {
   </div>
   </div>
 </nav>
+        </Element>
+      
     <header>
         <div className="container" id="maincontent">
             <div className="row">
                 <div className="col-lg-12">
         
                     <div className="intro-text">
-                        <h1 className="name">Hi. I'm Ryan.</h1>
+                        <div className="name"><TextEffect/></div>
                         <hr/>
                         <h3 className="skills">I build full-stack javascript applications.</h3>
                         <h5> Explore my work and always feel free to reach out! </h5>
@@ -55,31 +88,39 @@ class App extends Component {
                 <div className="row">
                 <div className="col-lg-12">
                 <div className="header-links">
-                <a><i className="fa fa-github" aria-hidden="true"></i></a>
-                <a><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a><i className="fa fa-envelope" aria-hidden="true"></i></a>
-                
+                <a href="https://www.linkedin.com/in/ryan-lambert-58202596"><i className="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ryan-lambert-58202596"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="mailto:ryanlandonlambert@gmail.com"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+
                 </div>
                 </div>
                 </div>
             </div>
         </div>
     </header>
-<section className="portfolio">
+<Element name="portfolio" className="element">    
+  <section className="portfolio">
 
-<Portfolio />
-</section>
+        <Portfolio />
+
+  </section>
+ </Element>
+  <Element name="about" className="element">
     <section className="success" id="about">
-            <AboutMe />
+        <AboutMe />
     </section>
-        <section className="technologies" id="tech">
-        <Tech />
-    </section>
+   </Element>   
+   <Element name="skills" className="element">
+      <section className="technologies" id="tech">
+        <Tech/>
+      </section>   
+     </Element> 
+    <Element name="contact" className="element">
         <section className="contact-me">
-       
-<Contact/>
-    
-    </section>
+          <Contact/>
+          </section>  
+     </Element> 
+  
 
 <footer>
 <div className="upper-footer">
@@ -103,6 +144,8 @@ Project Idea? Always Feel Free to Reach Out!
             </div>
         </div>
     </footer>
+
+
       </div>
     );
   }
