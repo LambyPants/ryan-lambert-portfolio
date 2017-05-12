@@ -5,7 +5,7 @@ import lovetoeat from '../../public/images/lovetoeat.png';
 import YelpCamp from '../../public/images/yelpcamp.png';
 import easyabc from '../../public/images/easyabc.png';
 import Weather from '../../public/images/Weather.png';
-import Image8 from '../../public/images/HTML5.png';
+import youtube from '../../public/images/youtube.png';
 import Image9 from '../../public/images/HTML5.png';
 
 const originalData =  [
@@ -40,11 +40,11 @@ const originalData =  [
         {
             name: "React YouTube Clone",
             github: "https://github.com/LambyPants/react-youtube-clone",
-            website: "none",
+            website: "https://salty-retreat-24555.herokuapp.com/",
             technologies: ["React.js", "Bootstrap", "APIs"],
             description: "As practice with single-page applications made with React, this app is a clone of the YouTube video player and allows users to instantly search for and watch YouTube videos.",
             completion: "April 2017",
-            imageLink: "http://hallambertarchitecture.com/HLAFinal/CustomHomes/HalsHouse/1-Thumbnail.JPG"
+            imageLink: youtube
         },       
         {
             name: "NoSuchThingAsBadPress Node.js App",
