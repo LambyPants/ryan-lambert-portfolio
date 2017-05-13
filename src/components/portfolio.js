@@ -4,7 +4,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {bindActionCreators} from 'redux';
 import Buttons from './portfolio-filters';
 import Modal from './modal';
-
+import classNames from 'classnames';
 import {selectedModal} from '../actions/index';
 import {openCloseModal} from '../actions/index';
 
@@ -16,11 +16,7 @@ class Portfolio extends Component {
   
     
     handleClick(filter){
-
-        console.log(filter);
- 
       this.props.filteredProjects(filter);
-      
      
     }
     
@@ -30,10 +26,10 @@ class Portfolio extends Component {
      var   arrayToMap = this.props.project;
     
         return arrayToMap.map((project,i)=>{
-            console.log(project);
+            
             return(
-                <div className="col-sm-4 portfolio-item" key={i}>
-                       <a onClick={()=>{this.props.selectedModal(project); this.props.openCloseModal(true);}}href="#portfolioModal1" className="portfolio-link">
+                <div className="col-md-4 col-sm-6 portfolio-item" key={i}>
+                       <a onClick={()=>{this.props.selectedModal(project); this.props.openCloseModal(true);}}className="portfolio-link">
                 <div className="caption">
           
                             <div className="caption-content">
@@ -121,6 +117,7 @@ class Portfolio extends Component {
 
 <a className="btn btn-primary github" href={this.props.modal.github}>See the Code</a>
 <a className="btn btn-primary website" href={this.props.modal.website}>See the Website</a>
+<p className={classNames({'hide': !this.props.modal.herokuFree})}><em>This website may load slowly, as it being hosted for free on Heroku as a project showcase app</em></p>
 </div>
 </div>
 </Modal>
@@ -132,7 +129,7 @@ class Portfolio extends Component {
 }
 
 function mapStateToProps(state){
-    console.log(state);
+    
     return {
         project: state.project,
         modal: state.modal

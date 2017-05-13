@@ -30,7 +30,7 @@ class Contact extends Component {
                 </li>              
                 <li>
                     <span><a><i className="fa fa-github-square" aria-hidden="true"></i></a> </span>
-                     <span><a href="https://www.github.com/LambyPants">Github</a></span>
+                     <span><a href="https://www.github.com/LambyPants">GitHub</a></span>
                 </li>                
                 <li>
                     <span><a><i className="fa fa-facebook-square" aria-hidden="true"></i></a> </span>

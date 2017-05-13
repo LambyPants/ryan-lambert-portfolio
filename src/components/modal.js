@@ -21,7 +21,7 @@ class Modal extends Component {
            if(!hideClass ){
                targetModal.className += " hide";
            }
-        console.log(this.props.openClose);
+        
         this._render();
     }
     componentWillUnmount(){
@@ -50,7 +50,7 @@ class Modal extends Component {
 }
 
 function mapStateToProps(state){
-    console.log(state.openClose);
+    
     return {
         openClose: state.openClose
     };  

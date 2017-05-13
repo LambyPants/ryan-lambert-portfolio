@@ -7,12 +7,10 @@ import {filteredProjects} from '../actions/index';
 
 class Buttons extends Component {
     renderButtons(){
-        console.log(this.props.filter);
        return  this.props.filter.map((button, i)=>{
             return(
          
             <button  className="btn btn-primary btn-lg" key={i} value={button}  onClick={(e)=>{this.props.filteredProjects(e.target.value)}}>{button}</button> 
-           
            
             );
             

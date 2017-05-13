@@ -6,16 +6,18 @@ import YelpCamp from '../../public/images/yelpcamp.png';
 import easyabc from '../../public/images/easyabc.png';
 import Weather from '../../public/images/Weather.png';
 import youtube from '../../public/images/youtube.png';
-import Image9 from '../../public/images/HTML5.png';
+import numbers from '../../public/images/numbers.png';
+import todolist from '../../public/images/todolist.png';
 
 const originalData =  [
         {
             name: "HL Architecture and Construction",
-            github: 202,
+            github: "https://github.com/LambyPants/hla-architecture-and-construction",
             website: "http://hallambertarchitecture.com/",
             technologies: ["jQuery", "Bootstrap"],
-            description: "Full Architecture Professional Website designed using Bootstrap and jQuery; includes a PHP contact form and multiple lightbox galleries.",
+            description: "Full architectural professional portfolio website designed using Bootstrap and jQuery; includes a PHP contact form and multiple lightbox galleries.",
             completion: "March 2017",
+            herokuFree: false,
             imageLink: HLA
         },        
         {
@@ -26,6 +28,7 @@ const originalData =  [
             type: "Single Page Application",
             description: "Single page application which dynamically displays Sparkline charts of city temperatures, a 10 day forecast, and their location on Google Maps.",
             completion: "May 2017",
+            herokuFree: true,
             imageLink: Weather
         },
         {
@@ -35,6 +38,7 @@ const originalData =  [
             technologies: ["MongoDB", "Bootstrap", "React.js", "Node.js"],
             description: "Single page application which incorporates an external MongoDB database and server-side API to save, delete, and edit user-uploaded recipes.",
             completion: "April 2017",
+            herokuFree: true,
             imageLink: lovetoeat
         },       
         {
@@ -44,6 +48,7 @@ const originalData =  [
             technologies: ["React.js", "Bootstrap", "APIs"],
             description: "As practice with single-page applications made with React, this app is a clone of the YouTube video player and allows users to instantly search for and watch YouTube videos.",
             completion: "April 2017",
+            herokuFree: true,
             imageLink: youtube
         },       
         {
@@ -53,25 +58,28 @@ const originalData =  [
             technologies: ["Node.js", "APIs", "Semantic-UI"],
             description: "This is a silly app made for a friend who LOVES reading bad reviews. This app randomly pulls a 1-star Review from Yelp via the Yelp-Fusion API; the structure of Yelp's API made this somewhat difficult to achieve, but thankfully you can now easily find the best of the worst of Yelp!",
             completion: "March 2017",
+            herokuFree: false,
             imageLink: Yelp
         },        
         {
-            name: "React / Redux Blog App",
-            github: "https://github.com/LambyPants/react-redux-blog-app",
-            website: 202,
-            technologies: ["React.js", "Bootstrap", "APIs"],
-            description: "This is React-Redux blogging application made as practice to help master ES6 and Redux.",
-            completion: "May 2017",
-            imageLink: "http://hallambertarchitecture.com/HLAFinal/CustomHomes/HalsHouse/1-Thumbnail.JPG"
+            name: "AJAX/jQuery To-Do App",
+            github: "https://github.com/LambyPants/AjaxtoDoList",
+            website: "https://fast-ocean-35630.herokuapp.com/",
+            technologies: ["jQuery", "Bootstrap"],
+            description: "This app is a single-page application of a 'To-Do-List' made using jQuery and Node.js; it includes a regex search function, allowing users to search for a specific 'todo'.",
+            completion: "February 2017",
+            herokuFree: true,
+            imageLink: todolist
         },
         {
             name: "React Numbers Game",
             github: "https://github.com/LambyPants/React-Numbers-Game",
-            website: 202,
+            website: "https://boiling-coast-24769.herokuapp.com/",
             technologies: ["Games", "React.js"],
             description: "This numbers game challenges you to correctly solve the sum of two randomly produced numbers; the player is presented with four random options in a similar range to the correct answer. This game includes 'GameOver' and 'Play Again' animations through Animate.css",
             completion: "March 2017",
-            imageLink: "http://hallambertarchitecture.com/HLAFinal/CustomHomes/HalsHouse/1-Thumbnail.JPG"
+            herokuFree: true,
+            imageLink: numbers
         },       
         {
             name: "YelpCamp Full-Stack App with Auth",
@@ -79,7 +87,8 @@ const originalData =  [
             website: "https://damp-peak-11641.herokuapp.com/",
             technologies: ["Node.js", "Bootstrap", "MongoDB"],
             completion: "April 2017",
-            description: "",
+            herokuFree: true,
+            description: "This my final capstone project produced during Colt Steele's Web Developer Bootcamp course. It's a fully functioning Express and Node.js application which allows users to sign-up, leave comments, and create directories to their favorite campgrounds (similar to Yelp - but for camping!)",
             imageLink: YelpCamp
         },        
         {
@@ -89,6 +98,7 @@ const originalData =  [
             technologies: ["React.js", "Games"],
             description: "This is an application to help children learn their ABC's and includes sound, images, and option-toggles (random letter, play sound / word again, mute). This was a 'homework assignment' and is my own solution to Abhay Talreja's 'React JS - Build Real World Applications' couse on Udemy.",
             completion: "February 2017",
+            herokuFree: true,
             imageLink: easyabc
         }
         ];
@@ -105,9 +115,9 @@ const originalData =  [
     }
 
 export default function(state={}, action) {
-    console.log(action.type);
+
     switch(action.type){
-        case 'FILTERED_ARRAY': console.log(action.payload); 
+        case 'FILTERED_ARRAY': 
         if(action.payload !== "All"){
          var testing = filterArray(action.payload);
         
@@ -118,5 +128,3 @@ export default function(state={}, action) {
 
 }
 
-
-// function test() {var finalArray=[]; x.forEach(function(arr) {for(i=0; i<arr.technologies.length; i++){if (arr.technologies[i] === "jQuery"){finalArray.push(arr.technologies[i])} }});return finalArray}

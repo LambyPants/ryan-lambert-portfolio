@@ -17,11 +17,11 @@ constructor (props){
   componentDidMount() {
 
     Events.scrollEvent.register('begin', function() {
-      console.log("begin", arguments);
+     
     });
 
     Events.scrollEvent.register('end', function() {
-      console.log("end", arguments);
+      
     });
 
     scrollSpy.update();
@@ -127,7 +127,7 @@ constructor (props){
 <div className="container">
 <div className="row">
 <div className="col-lg-12">
-Project Idea? Always Feel Free to Reach Out!
+Need help on a project? Send me an email!
 </div>
 </div>
 </div>
@@ -138,7 +138,7 @@ Project Idea? Always Feel Free to Reach Out!
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        I made this site using React.js and Redux - feel free to check out my code on GitHub!
+                        I made this site using React.js and Redux - check out the code for <span><a href="https://github.com/LambyPants/ryan-lambert-portfolio">this site</a></span> and all my other projects on my GitHub.
                     </div>
                 </div>
             </div>

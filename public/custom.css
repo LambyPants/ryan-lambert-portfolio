@@ -4,7 +4,7 @@ body {
 
 header {
   text-align: center;
-  background: #312cb3;
+  background: #423dd2;
   color: white;
 }
 header .intro-text .name h1{
@@ -14,10 +14,18 @@ header .intro-text .name h1{
   font-weight: 700;
   font-size: 4em;
 }
+@media (max-height: 414px) {
+ header .intro-text .name h1 {
+   padding-top: 10%;
+   font-size: 2.0em;
+ } 
+}
+
 header .intro-text .skills {
   font-size: 3em;
   font-weight: 300;
 }
+
 
 .navbar-custom {
   background: #161f3c;
@@ -102,6 +110,11 @@ section h2 {
   color: white;
   font-size: 3em;
 }
+@media (max-width: 768px){
+  section h2 {
+    font-size: 20px;
+  }
+}
 
 .portfolio h2 {
   color: #161f3c;
@@ -157,7 +170,7 @@ section h2 {
 }
 
 .portfolio-link img {
-  max-height: 185px;
+  height: 180px;
   width: 500px;
   padding: 0;
 
@@ -216,7 +229,7 @@ background-color: rgba(0,0,0,0);
 }
 @media (max-width: 868px){
 .contact-me .container-fluid{
- margin: 0 10% 0 10%; 
+ margin: 0; 
 }
 }
 
@@ -278,6 +291,10 @@ footer .footer-below {
 display:block;
 
 }
+.custom-modal p {
+  text-align: center;
+  font-size: 1.2em;
+}
 
 .hide {
   display: none;
@@ -289,8 +306,13 @@ display:block;
 }
 .custom-modal h4 {
   margin-top: 20px;
-
   line-height: 1.5em;
+}
+@media (max-width: 600px){
+  .custom-modal h4 {
+    font-size: 14px;
+    line-height: 1.1em;
+  }
 }
 .custom-modal table {
   text-align: center;
@@ -328,6 +350,11 @@ display:block;
   border: 1px solid #161f3c;
   color: #161f3c;
 }
+@media (max-width: 600px){
+  .project-info{
+  max-width:100%
+  }
+} 
 .project-info .panel-body {
   background-color: ghostwhite;
   border: 1px solid #161f3c;
@@ -353,4 +380,7 @@ display:block;
   transform: rotateZ(0deg);
   opacity: 0;
   transition: .2s ease-out all;
+}
+footer span a {
+  color: #18BC9C ;
 }
