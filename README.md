@@ -5,7 +5,6 @@ Access the live site: <a href="https://www.ryanlandonlambert.com">www.ryanlandon
 <ul>
 <li>React.js </li>
 <li>Redux.js</li>
-<li></li>
-<li> </li>
-<li> </li>
+<li>Bootstrap</li>
+
 </ul>
