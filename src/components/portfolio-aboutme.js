@@ -24,7 +24,7 @@ class AboutMe extends Component {
                 </div>
                 <div className="col-lg-5">
                     <p>I met my wife doing improv in the city and we have an adorable puppy named Cooper. You'll find us out and about the city together - rain or shine (or snow). Whether it's 
-                    a project for you, a friend, or just an adorable picture of your puppy, always feel to drop us a line! 
+                    a project for you, a friend, or just an adorable picture of your puppy, always feel free to drop us a line! 
                     </p>
                 </div>
                 </div>
