@@ -18,7 +18,7 @@ class Modal extends Component {
         var hideClass = document.querySelector('.hide');
        if(hideClass && this.props.openClose) {
            targetModal.classList.remove('hide')}
-           if(!hideClass ){
+           if(!hideClass|| !this.props.openClose){
                targetModal.className += " hide";
            }
         

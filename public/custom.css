@@ -16,7 +16,7 @@ header .intro-text .name h1{
 }
 @media (max-height: 414px) {
  header .intro-text .name h1 {
-   padding-top: 10%;
+   padding-top: 7%;
    font-size: 2.0em;
  } 
 }
