@@ -24,11 +24,30 @@ header .intro-text .name h1{
    padding-top: 7%;
    font-size: 2.0em;
  } 
+}@media (max-width: 325px) {
+ header .intro-text .name h1 {
+   padding-top: 20%;
+   font-size: 2.4em;
+ } 
 }
 
 header .intro-text .skills {
   font-size: 3em;
   font-weight: 300;
+}
+
+header .intro-pointer i {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 3.0em;
+  padding-top: 25vh;
+
+}
+@media(max-height: 735px){
+  .intro-pointer i {
+    display: none;
+  }
 }
 
 
@@ -94,9 +113,16 @@ header .intro-text .skills {
   height: 95vh;
 }
 .header-links a {
+  color: white;
   padding: 10px 10px 30px 10px;
   font-size: 2.0em;
   
+}
+header .container i:hover {
+  color: #18BC9C;
+}
+header .container .intro-pointer i:hover {
+  margin-top: 5px;
 }
 
 .portfolio {
@@ -150,6 +176,7 @@ section h2 {
    outline: 1px solid white;
   outline-offset: -10px;
   transition: all ease 0.5s;
+  cursor: pointer;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
@@ -184,11 +211,15 @@ section h2 {
   height: 180px;
   width: 500px;
   padding: 0;
+ 
 
 }
 .well .btn {
   background: #312cb3;
   border: 1px solid #161f3c;
+}
+.activeButton {
+  background: #efb141 !important; 
 }
 .container .well {
   border: 2px solid #ddd;

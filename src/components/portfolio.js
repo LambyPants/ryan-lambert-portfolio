@@ -26,7 +26,7 @@ class Portfolio extends Component {
      var   arrayToMap = this.props.project;
     
         return arrayToMap.map((project,i)=>{
-            
+           
             return(
                 <div className="col-md-4 col-sm-6 portfolio-item" key={i}>
                        <a onClick={()=>{this.props.selectedModal(project); this.props.openCloseModal(true);}}className="portfolio-link">
@@ -129,7 +129,7 @@ class Portfolio extends Component {
 }
 
 function mapStateToProps(state){
-    
+  
     return {
         project: state.project,
         modal: state.modal

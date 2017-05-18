@@ -114,17 +114,19 @@ const originalData =  [
         return finalArray
     }
 
-export default function(state={}, action) {
+export default function(state=originalData, action) {
 
     switch(action.type){
         case 'FILTERED_ARRAY': 
+         
         if(action.payload !== "All"){
          var testing = filterArray(action.payload);
         
         return testing;} else {
         return originalData}
-           default: return originalData;
+           default: return state;
     }
+  
 
 }
 

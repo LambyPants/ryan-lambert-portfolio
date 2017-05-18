@@ -81,7 +81,7 @@ constructor (props){
                         <div className="name"><TextEffect/></div>
                         <hr/>
                         <h3 className="skills">I build full-stack javascript applications.</h3>
-                        <h5> Explore my work and always feel free to reach out! </h5>
+                        <h5> Explore my work and always feel free to reach out with a project idea! </h5>
                         
                     </div>
                 </div>
@@ -95,6 +95,8 @@ constructor (props){
                 </div>
                 </div>
                 </div>
+           
+                <Link  to="portfolio" spy={true} smooth={true} duration={500} className="intro-pointer"> <i className="fa fa-chevron-circle-down" aria-hidden="true"></i> </Link>
             </div>
         </div>
     </header>
