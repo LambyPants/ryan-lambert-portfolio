@@ -45,7 +45,12 @@ header .intro-pointer i {
 
 }
 @media(max-height: 735px){
-  .intro-pointer i {
+  header .intro-pointer i {
+    padding-top: 4%;
+  }
+}
+@media(max-height: 590px){
+  header .intro-pointer i {
     display: none;
   }
 }
