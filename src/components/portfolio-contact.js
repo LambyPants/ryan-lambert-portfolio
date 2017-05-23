@@ -25,7 +25,7 @@ class Contact extends Component {
                 </li>              
                 <li>
                     <span><a><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
-                    <span><a href="https://www.linkedin.com/in/ryan-lambert-58202596">LinkedIn</a></span>
+                    <span><a href="https://www.linkedin.com/in/ryan-lambert-58202596"> LinkedIn</a></span>
                      
                 </li>              
                 <li>
