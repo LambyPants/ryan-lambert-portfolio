@@ -8,6 +8,7 @@ import Weather from '../../public/images/Weather.png';
 import youtube from '../../public/images/youtube.png';
 import numbers from '../../public/images/numbers.png';
 import todolist from '../../public/images/todolist.png';
+import BHatch from '../../public/images/Bhatch.png';
 
 const originalData =  [
         {
@@ -19,7 +20,17 @@ const originalData =  [
             completion: "March 2017",
             herokuFree: false,
             imageLink: HLA
-        },        
+        },
+         {
+            name: "Brian Hatch | Actor Portfolio App",
+            github: "https://github.com/LambyPants/bhatch-actor-website-app",
+            website: "http://briananthonyhatch.com/",
+            technologies: ["jQuery", "Bootstrap", "Node.js", "MongoDB"],
+            description: "This is professional portfolio full-stack web application built for New York actor Brian Hatch. It includes a backend Node.js interface which allows the client to edit, create, and destroy all site content himself (all media, links, announcements, quotes, etc).All CRUD routes and the backend interface are protected through authentication middleware and Passport -- accessible by the client only after he has logged in..",
+            completion: "June 2017",
+            herokuFree: false,
+            imageLink: BHatch
+        },   
         {
             name: "React / Redux Weather App",
             github: "https://github.com/LambyPants/react-redux-weather-app",
