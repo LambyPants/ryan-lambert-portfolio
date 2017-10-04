@@ -20,10 +20,10 @@ class AboutMe extends Component {
                         <div className="container">
                 <div className="col-lg-5">
                     <p>Originally from Florida, I now call myself a proud Chicagoan (though I will always have a soft spot for extra-pulp orange juice). 
-                    I love building websites and web-applications and helping others solve problems. When I'm not coding, I enjoy playing guitar and practicing my German. </p>
+                    I love building websites and web-applications and helping others solve problems and currently work as a professional developer.  </p>
                 </div>
                 <div className="col-lg-5">
-                    <p>I met my wife doing improv in the city and we have an adorable puppy named Cooper. You'll find us out and about the city together - rain or shine (or snow). Whether it's 
+                    <p>When I'm not coding, I enjoy playing guitar and practicing my German. I met my wife doing improv in the city and we have an adorable puppy named Cooper. Whether it's 
                     a project for you, a friend, or just an adorable picture of your puppy, always feel free to drop us a line! 
                     </p>
                 </div>

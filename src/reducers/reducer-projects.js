@@ -6,9 +6,8 @@ import YelpCamp from '../../public/images/yelpcamp.png';
 import easyabc from '../../public/images/easyabc.png';
 import Weather from '../../public/images/Weather.png';
 import youtube from '../../public/images/youtube.png';
-import numbers from '../../public/images/numbers.png';
-import todolist from '../../public/images/todolist.png';
 import BHatch from '../../public/images/Bhatch.png';
+import paperZombies from '../../public/images/paperzombies.PNG';
 
 const originalData =  [
         {
@@ -25,12 +24,22 @@ const originalData =  [
             name: "Brian Hatch | Actor Portfolio App",
             github: "https://github.com/LambyPants/bhatch-actor-website-app",
             website: "http://briananthonyhatch.com/",
-            technologies: ["jQuery", "Bootstrap", "Node.js", "MongoDB"],
+            technologies: ["jQuery", "Bootstrap", "Node.js", "MongoDB, Top Projects"],
             description: "This is professional portfolio full-stack web application built for New York actor Brian Hatch. It includes a backend Node.js interface which allows the client to edit, create, and destroy all site content himself (all media, links, announcements, quotes, etc).All CRUD routes and the backend interface are protected through authentication middleware and Passport -- accessible by the client only after he has logged in..",
             completion: "June 2017",
             herokuFree: false,
             imageLink: BHatch
-        },   
+        },
+        {
+            name: "Paper Zombies",
+            github: "https://github.com/LambyPants/PaperZombies",
+            website: "https://lambypants.github.io/PaperZombies/",
+            technologies: ["Games", "Top Projects"],
+            description: "A zombie survival game made with Paper.js -- use your keyboard and mouse to shoot zombies and earn a higher score. If you collect 3 gas tanks, you'll have enough fuel to power your zombie crushing sports car. But be careful! Zombies get more numerous and faster the more you kill. How long will you survive the zombie apocalypse? As an experiment, this project relied only on Paper.js to draw its sprites and characters; no outside SVG images were used in the making of this game.",
+            completion: "October 2017",
+            herokuFree: false,
+            imageLink: paperZombies
+        },
         {
             name: "React / Redux Weather App",
             github: "https://github.com/LambyPants/react-redux-weather-app",
@@ -56,7 +65,7 @@ const originalData =  [
             name: "React YouTube Clone",
             github: "https://github.com/LambyPants/react-youtube-clone",
             website: "https://salty-retreat-24555.herokuapp.com/",
-            technologies: ["React.js", "Bootstrap", "APIs"],
+            technologies: ["React.js", "Bootstrap", "APIs, Top Projects"],
             description: "As practice with single-page applications made with React, this app is a clone of the YouTube video player and allows users to instantly search for and watch YouTube videos.",
             completion: "April 2017",
             herokuFree: true,
@@ -66,32 +75,12 @@ const originalData =  [
             name: "NoSuchThingAsBadPress Node.js App",
             github: "https://github.com/LambyPants/Random1StarYelpReviewsApp",
             website: "http://www.nosuchthingasbadpress.com/",
-            technologies: ["Node.js", "APIs", "Semantic-UI"],
+            technologies: ["Node.js", "APIs"],
             description: "This is a silly app made for a friend who LOVES reading bad reviews. This app randomly pulls a 1-star Review from Yelp via the Yelp-Fusion API; the structure of Yelp's API made this somewhat difficult to achieve, but thankfully you can now easily find the best of the worst of Yelp!",
             completion: "March 2017",
             herokuFree: false,
             imageLink: Yelp
         },        
-        {
-            name: "AJAX/jQuery To-Do App",
-            github: "https://github.com/LambyPants/AjaxtoDoList",
-            website: "https://fast-ocean-35630.herokuapp.com/",
-            technologies: ["jQuery", "Bootstrap"],
-            description: "This app is a single-page application of a 'To-Do-List' made using jQuery and Node.js; it includes a regex search function, allowing users to search for a specific 'todo'.",
-            completion: "February 2017",
-            herokuFree: true,
-            imageLink: todolist
-        },
-        {
-            name: "React Numbers Game",
-            github: "https://github.com/LambyPants/React-Numbers-Game",
-            website: "https://boiling-coast-24769.herokuapp.com/",
-            technologies: ["Games", "React.js"],
-            description: "This numbers game challenges you to correctly solve the sum of two randomly produced numbers; the player is presented with four random options in a similar range to the correct answer. This game includes 'GameOver' and 'Play Again' animations through Animate.css",
-            completion: "March 2017",
-            herokuFree: true,
-            imageLink: numbers
-        },       
         {
             name: "YelpCamp Full-Stack App with Auth",
             github: "https://github.com/LambyPants/YelpCampV12",
