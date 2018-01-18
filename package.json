@@ -29,5 +29,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://LambyPants.github.io/ryan-lambert-portfolio"
+  "homepage": "http://LambyPants.github.io/ryan-lambert-portfolio"
 }
