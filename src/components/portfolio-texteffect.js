@@ -28,7 +28,7 @@ componentDidMount(){
   }  
     render(){
         return(
-        <h1>{this.state.initialPhrase}</h1>
+        <h1><i className="fa fa-code"></i>  {this.state.initialPhrase}</h1>
         );
     }
 }

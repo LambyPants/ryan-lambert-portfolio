@@ -78,7 +78,7 @@ constructor (props){
                 <div className="col-lg-12">
         
                     <div className="intro-text">
-                        <div className="name"><TextEffect/></div>
+                      <div className="name"><TextEffect/></div>
                         <hr/>
                         <h3 className="skills">I build full-stack javascript applications.</h3>
                         <h5> Explore my work and always feel free to reach out with a project idea! </h5>
