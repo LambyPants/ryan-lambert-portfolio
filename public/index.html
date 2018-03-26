@@ -16,10 +16,76 @@
     <title>Ryan Lambert - Developer Portfolio</title>
   </head>
   <body>
+    <canvas id="canvas" style="display: block; background: #423dd2; position: absolute; width:100%; height: 95vh;" resize></canvas>
+
+   <script type="text/paperscript" canvas="canvas">
+        rotation = 0;
+        // The amount of segment points we want to create:
+        var arrayOfPaths = [];
+        var createNewWave = function(position, step) {
+          var amount = 10;
+        
+          // The maximum height of the wave:
+          var height = 2;
+          // Create a new path and style it:
+          var path = new Path.Circle({
+            center: [80, 50],
+            radius: step,
+            strokeColor: "black",
+            fillColor: "red"
+          });
+        
+          path.position = position;
+        
+          path.movementX = Math.round(Math.random()) * 2 - 1;
+          path.movementY = Math.round(Math.random()) * 2 - 1;
+          arrayOfPaths.push(path);
+          path.rotate(rotation);
+        
+          path.originalPosition = position;
+        };
+        
+        onMouseMove = function(event) {
+          // Whenever the user moves the mouse, move the path
+          // to that position:
+        
+          var step = Math.min(event.delta.length / 10, 12);
+        
+          createNewWave(event.point, step);
+        };
+        
+        onFrame = function(event) {
+          var amount = 10;
+          var height = 1;
+          arrayOfPaths.forEach(function(line, index) {
+            line.fillColor.hue += 3;
+        
+            for (var i = 0; i < line.segments.length; i++) {
+              var segment = line.segments[i];
+        
+              // A cylic value between -1 and 1
+              var sinus = Math.sin(event.time * 2 + i);
+              var sinus2 = Math.sin(event.time * 2 + i);
+              segment.point.x += line.movementX * Math.random();
+              segment.point.y += line.movementY * Math.random();
+        
+              // Change the y position of the segment point:
+            }
+            line.scale(0.995);
+            line.rotate(2);
+            if (arrayOfPaths.length > 300) {
+              line.remove();
+              arrayOfPaths.splice(index, 1);
+            }
+          });
+        };
+
+    </script>
     <div id="root"></div>
     <!--
   Check out the code to this page on my github
     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
