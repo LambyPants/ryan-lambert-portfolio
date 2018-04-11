@@ -1,23 +1,5 @@
 {
-  "main.js": "static/js/main.66701b0f.js",
-  "main.js.map": "static/js/main.66701b0f.js.map",
-  "static/media/Bhatch.png": "static/media/Bhatch.2cda8f5e.png",
-  "static/media/HLA.png": "static/media/HLA.c9a2586e.png",
-  "static/media/Weather.png": "static/media/Weather.b2ce325b.png",
-  "static/media/Yelp.png": "static/media/Yelp.633d5631.png",
-  "static/media/ajax.png": "static/media/ajax.bf76f4db.png",
-  "static/media/bootstrap.png": "static/media/bootstrap.308a16d8.png",
-  "static/media/css.png": "static/media/css.174ea553.png",
-  "static/media/easyabc.png": "static/media/easyabc.cef176f4.png",
-  "static/media/javascript.png": "static/media/javascript.03d471c6.png",
-  "static/media/jquery.png": "static/media/jquery.b34e848e.png",
-  "static/media/lovetoeat.png": "static/media/lovetoeat.f467565c.png",
-  "static/media/mongodb.png": "static/media/mongodb.4d28b039.png",
-  "static/media/node.png": "static/media/node.d42672d4.png",
-  "static/media/paperzombies.PNG": "static/media/paperzombies.a5dcbf4d.PNG",
-  "static/media/react.png": "static/media/react.37fe8322.png",
-  "static/media/redux.png": "static/media/redux.382e2074.png",
-  "static/media/ryanpic.jpg": "static/media/ryanpic.7dd1698e.jpg",
-  "static/media/yelpcamp.png": "static/media/yelpcamp.b97a5e30.png",
-  "static/media/youtube.png": "static/media/youtube.09d2cb49.png"
+  "main.js": "static/js/main.5aef55a9.js",
+  "main.js.map": "static/js/main.5aef55a9.js.map",
+  "static/media/HLA.png": "static/media/HLA.c9a2586e.png"
 }
